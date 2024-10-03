@@ -2,26 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Basic resets */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Ensure you're using a font that fits the design */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom styles */
+main {
+  /* Ensures that the content doesn't scroll on mobile */
+  overflow: hidden;
+}
+
+/* Adding custom styles for images to avoid overflow */
+img {
+  max-width: 100%; /* This makes sure images don't overflow the container on small screens */
+  height: auto; /* Keeps the image ratio intact */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .main-image {
+    width: 90%; /* Ensures the main image stays within the screen */
+    margin: 0 auto; /* Centers the image on mobile */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjust font size for mobile */
+    margin-top: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Change to single column layout for small screens */
+    gap: 10px;
+  }
+
+  .overlay-text {
+    font-size: 1.5rem; /* Adjust text size for readability */
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    margin: 10px;
+    padding: 10px;
+    text-align: center; /* Make text more centered and balanced on small screens */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Media Query for Desktop Screens */
+@media (min-width: 769px) {
+  .main-image {
+    width: 53%; /* Adjust image size for larger screens */
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h2 {
+    font-size: 3rem; /* Larger headings on bigger screens */
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for larger screens */
+    gap: 20px;
+  }
+
+  .overlay-text {
+    font-size: 2rem; /* Increase text size for clarity */
+    text-align: right; /* Align to right */
+  }
+
+  p {
+    font-size: 1.25rem; /* Larger paragraph text */
   }
 }
