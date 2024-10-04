@@ -1,6 +1,10 @@
+
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+config.autoAddCss = false;
 
 const ContactSection = () => {
   return (
@@ -24,6 +28,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
+                  aria-label="Your Name"
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
@@ -35,6 +40,7 @@ const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
+                  aria-label="Email Address"
                   placeholder="Enter your email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
@@ -45,6 +51,7 @@ const ContactSection = () => {
                 </label>
                 <textarea
                   id="message"
+                  aria-label="Your Message"
                   placeholder="Enter your message"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                   rows={5}
@@ -75,7 +82,6 @@ const ContactSection = () => {
               <a href="https://www.linkedin.com/in/alishba-rehman-29074821a/" className="text-orange-900 hover:text-yellow-900 transition">
                 <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
               </a>
-              
             </div>
           </div>
         </div>

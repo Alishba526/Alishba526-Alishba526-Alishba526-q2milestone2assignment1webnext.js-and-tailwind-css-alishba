@@ -1,9 +1,17 @@
+import Image from 'next/image'; // Use next/image
+import image0 from '../../../../src/app/public/images/image0.png';
+import image1 from '../../../../src/app/public/images/images1.jpg';
+import image2 from '../../../../src/app/public/images/image2.webp';
+import image3 from '../../../../src/app/public/images/image3.webp';
+import image4 from '../../../../src/app/public/images/image4.jpg';
+import image5 from '../../../../src/app/public/images/image5.jpg';
+import image6 from '../../../../src/app/public/images/images6.png';
 function Hero() {
   return (
     <main className="p-4 bg-yellow-500">
       <div className="bg-yellow-500 p-5 sm:p-8 md:p-10 rounded flex flex-col lg:flex-row lg:items-center">
-        <img
-          src="https://www.myhomesplan.com/images/MHP2/MHP20061.png"
+        <Image
+          src={image0}
           alt="img"
           className="mt-3 mb-10 h-64 w-[100%] sm:h-80 md:h-96 lg:w-[53%] lg:mr-8 border-red-900 border-8"
         />
@@ -23,35 +31,48 @@ function Hero() {
       </div>
 
       <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl mb-5 mt-10">
-        Buy Now
+        watch Now
       </h2>
 
-      {/* Flexbox layout for images */}
-<div className="flex flex-wrap justify-center gap-5 p-2 sm:p-4 w-full object-cover rounded border-8 border-orange-900  ">  
-  <img
-    src="https://photos.zillowstatic.com/fp/b8b30e6cc1d04335d3b4b9a6fbb9df38-cc_ft_960.jpg"
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
-  />
-  <img
-    src="https://1.bp.blogspot.com/-PnLhR7vaVHM/W0TBStmfIMI/AAAAAAAACJY/LuXFnpu1FzAxEhy5VUAMit8TrlO_7L41gCLcBGAs/s640/2bedroom-latest-model-budget-home-with-free-plan.jpg"
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900  ease-in-out hover:scale-105"
-  />
-  <img
-    src="https://i.insider.com/55cb9463371d22a40e8bf1cb?width=600&format=jpeg&auto=webp"
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900  ease-in-out hover:scale-105"
-  />
-  <img
-    src="https://i0.wp.com/www.ps71.org/wp-content/uploads/2017/08/dgdfhgfhgffhgfhfghfgh.jpg?w=960&ssl=1"
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900  ease-in-out hover:scale-105"
-  />
-  <img
-    src="https://media.istockphoto.com/id/1567429058/photo/landscaping-on-middleclass-homes-aerial-neighborhood-fresh-cut-lawns.jpg?s=612x612&w=0&k=20&c=XnYq0Vcl34LsM2V4Jto2_4rZSaDWwSGqW5-oSOHWz-s="
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900  ease-in-out hover:scale-105"
-  />
-  <img
-    src="https://media.licdn.com/dms/image/D5612AQF-RIHf-4j_zw/article-cover_image-shrink_600_2000/0/1708358503876?e=2147483647&v=beta&t=VgEDixklcwOzYDCmvyr-BqfmvRHzWrxPMgLQNUhi6nk"
-    className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900  ease-in-out hover:scale-105"
-  />
+       {/* Flexbox layout for images */}
+       <div className="flex flex-wrap justify-center gap-5 p-2 sm:p-4 w-full object-cover rounded border-8 border-orange-900">  
+        <Image // Use Image component for external images
+          src={image1}
+          alt="Image 1"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
+        <Image
+src={image2}          alt="Image 2"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
+        <Image
+src={image3}          alt="Image 3"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
+        <Image
+src={image4}          alt="Image 4"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
+        <Image
+src={image5}          alt="Image 5"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
+        <Image
+src={image6}          alt="Image 6"
+          className="h-40 sm:h-48 md:h-64 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105"
+          width={500} // Add width
+          height={500} // Add height
+        />
 </div>
 
     </main>
@@ -59,12 +80,6 @@ function Hero() {
 }
 
 export default Hero;
-
-
-
-
-
-
 
 
 

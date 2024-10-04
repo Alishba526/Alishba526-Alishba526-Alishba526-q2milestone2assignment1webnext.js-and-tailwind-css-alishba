@@ -1,15 +1,18 @@
-
+import Image from 'next/image'
+import about1 from "../../../src/app/public/images/about1.jpeg"
 const AboutUs = () => {
     return (
       <section className="bg-yellow-500 py-12">
         <div className="container mx-auto px-6">
           <div className="lg:flex lg:items-center lg:justify-between">
             <div className="lg:w-1/2 mb-6 lg:mb-0">
-              <img
-                src="https://kmhp.in/wp-content/uploads/2021/06/img-01.jpeg"
-                alt="About Us Image"
-                className="rounded-lg shadow-lg object-cover w-full h-64 lg:h-96 hover:scale-105 border-4 border-orange-900"
-              />
+            <Image
+              src={about1}// Ye path public folder se directly access karta hai
+              alt="About Us Image"
+              className="rounded-lg shadow-lg object-cover w-full h-64 lg:h-96 hover:scale-105"
+              width={500} // Aapki image ka desired width
+              height={300} // Aapki image ka desired height
+            />              
             </div>
             <div className="lg:w-1/2 text-center lg:text-left">
               <h2 className="text-4xl font-extrabold text-orange-900 mb-4 ml-8">About Us</h2>
@@ -28,10 +31,12 @@ Our team is professional and experienced, dedicated to providing you with the be
               </a>
             </div>
           </div>
+
+
         </div>
       </section>
     );
   };
   
   export default AboutUs;
-  
+
