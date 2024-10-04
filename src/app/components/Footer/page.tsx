@@ -1,5 +1,4 @@
-// Footer.jsx
-import React from 'react';
+// // Footer.jsx
 import { FaFacebookF,FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
@@ -10,8 +9,7 @@ const Footer = () => {
           <div className="mb-4">
             <h3 className="text-lg font-bold mb-2">About Us</h3>
             <p>
-            "We are dedicated to providing you with exceptional services that enhance your living experience and reflect your unique lifestyle."
-            </p>
+"            `We are dedicated to providing you with exceptional services that enhance your living experience and reflect your unique lifestyle.`</p>
           </div>
           <div className="mb-4">
             <h3 className="text-lg font-bold mb-2 text-white">
@@ -41,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-yellow-500 pt-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Agency. All rights reserved.</p>
+          <p>{new Date().getFullYear()} Agency. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -49,3 +47,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
