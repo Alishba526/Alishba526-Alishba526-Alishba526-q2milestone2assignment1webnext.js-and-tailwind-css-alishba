@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import about1 from "../../../src/app/public/images/about1.jpeg"
+import about1 from '../../../src/app/public/images/about1.jpeg'
 const AboutUs = () => {
     return (
       <section className="bg-white-400 py-12">
