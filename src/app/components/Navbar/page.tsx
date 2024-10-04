@@ -92,10 +92,10 @@ function Navbar() {
     };
 
     return (
-        <header className="bg-orange-900 text-white py-1 fixed w-full z-10">
+        <header className="bg-orange-900 text-white py-3 mr-0 fixed w-full z-10">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
-                <h2 className="italic text-3xl font-bold ">Alishba Rehman</h2>
+                <h2 className="italic text-3xl font-bold mr-2 ">"AlishbaRehman"</h2>
                 
                 {/* Toggle Icon for mobile */}
                 <div className="md:hidden">

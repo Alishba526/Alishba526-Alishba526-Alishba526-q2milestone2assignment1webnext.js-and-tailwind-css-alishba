@@ -9,7 +9,7 @@ const AboutUs = () => {
             <Image
               src={about1}// Ye path public folder se directly access karta hai
               alt="About Us Image"
-              className="rounded-lg shadow-lg object-cover w-full h-64 lg:h-96 hover:scale-105"
+              className="rounded-lg shadow-lg object-cover w-full h-64 lg:h-96 hover:scale-105 mt-9 border-4 border-orange-900"
               width={500} // Aapki image ka desired width
               height={300} // Aapki image ka desired height
             />              
