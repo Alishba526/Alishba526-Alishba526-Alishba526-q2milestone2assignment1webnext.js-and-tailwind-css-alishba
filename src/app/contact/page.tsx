@@ -8,7 +8,7 @@ config.autoAddCss = false;
 
 const ContactSection = () => {
   return (
-    <section className="bg-yellow-500 py-16">
+  <section className="bg-white py-16">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-orange-900 mb-4">Get In Touch</h2>
@@ -59,7 +59,7 @@ const ContactSection = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-orange-900 text-yellow-500 px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition"
+                className="w-full bg-orange-900 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition"
               >
                 Send Message
               </button>

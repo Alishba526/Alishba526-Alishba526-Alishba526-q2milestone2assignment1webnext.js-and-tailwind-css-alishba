@@ -2,7 +2,7 @@ import Image from 'next/image'
 import about1 from "../../../src/app/public/images/about1.jpeg"
 const AboutUs = () => {
     return (
-      <section className="bg-yellow-500 py-12">
+      <section className="bg-white-400 py-12">
         <div className="container mx-auto px-6">
           <div className="lg:flex lg:items-center lg:justify-between">
             <div className="lg:w-1/2 mb-6 lg:mb-0">
@@ -25,7 +25,7 @@ Our team is professional and experienced, dedicated to providing you with the be
               </p>
               <a
                 href="https://www.linkedin.com/in/alishba-rehman-29074821a/"
-                className="bg-orange-900 text-yellow-500 px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition ml-8"
+                className="bg-orange-900 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-700 transition ml-8"
               >
                 Learn More
               </a>

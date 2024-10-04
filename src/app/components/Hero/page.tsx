@@ -8,8 +8,8 @@ import image5 from '../../../../src/app/public/images/image5.jpg';
 import image6 from '../../../../src/app/public/images/images6.png';
 function Hero() {
   return (
-    <main className="p-4 bg-yellow-500">
-      <div className="bg-yellow-500 p-5 sm:p-8 md:p-10 rounded flex flex-col lg:flex-row lg:items-center">
+    <main className="p-4 ">
+      <div className="p-5 sm:p-8 md:p-10 rounded flex flex-col lg:flex-row lg:items-center">
         <Image
           src={image0}
           alt="img"
@@ -18,10 +18,9 @@ function Hero() {
         
         {/* Text section on the right */}
         <div className="flex flex-col">
-          <h1 className="text-orange-900 text-right text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
-            HOME AGENCY WEBSITE
-          </h1>
-          <p className="text-right text-lg sm:text-xl md:text-2xl">
+          <h1 className="text-orange-900 text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+            HOME AGENCY</h1>
+          <p className="text-center text-lg sm:text-xl md:text-2xl mb-5">
             Digital Silk is a full-service agency comprised of leading web
             designers from around the globe. Whether building a website from
             scratch or redesigning your current digital presence, our web

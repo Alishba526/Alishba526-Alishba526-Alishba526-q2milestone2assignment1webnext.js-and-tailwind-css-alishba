@@ -68,7 +68,7 @@ img {
 
   .overlay-text {
     font-size: 2rem; /* Increase text size for clarity */
-    text-align: right; /* Align to right */
+  text-align: center;
   }
 
   p {

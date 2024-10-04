@@ -14,11 +14,11 @@ function Navbar(){
                 <nav>
                     <ul className="flex gap-x-20 mr-16 text-2xl text-white ">
                         <li>
-                            <Link href="/" className="hover:bg-yellow-500 rounded brightness-95">Home</Link></li>
+                            <Link href="/" className="hover:bg-orange-700 rounded brightness-95">Home</Link></li>
                             <li>
-                            <Link href="/about"  className="hover:bg-yellow-500 rounded">About</Link></li>
+                            <Link href="/about"  className="hover:bg-orange-700 rounded">About</Link></li>
                             <li>
-                            <Link href="/contact"  className="hover:bg-yellow-500 rounded-s-lg">Contact</Link></li>
+                            <Link href="/contact"  className="hover:bg-orange-700">Contact</Link></li>
                             
                     </ul>
                 </nav>
