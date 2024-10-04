@@ -13,7 +13,7 @@ function Hero() {
         <Image
           src={image0}
           alt="img"
-          className="mt-3 mb-10 h-64 w-[100%] sm:h-80 md:h-96 lg:w-[53%] lg:mr-8 border-red-900 border-8"
+          className="mt-10 mb-10 h-64 w-[100%] sm:h-80 md:h-96 lg:w-[53%] lg:mr-8 border-red-900 border-8"
         />
         
         {/* Text section on the right */}

@@ -9,6 +9,16 @@ body {
   font-family: 'Poppins', sans-serif; /* Ensure you're using a font that fits the design */
 }
 
+
+/* Custom styles for Navbar */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s ease;
+}
+
 /* Custom styles */
 main {
   /* Ensures that the content doesn't scroll on mobile */
