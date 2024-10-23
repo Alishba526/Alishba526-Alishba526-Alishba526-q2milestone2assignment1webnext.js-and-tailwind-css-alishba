@@ -1,126 +1,67 @@
-
-// "use client"; // Make this a client component
-// import React, { useState } from "react";
-// import Link from "next/link";
-// import { FaBars, FaTimes } from "react-icons/fa";
-
-// function Navbar() {
-//     const [isOpen, setIsOpen] = useState(false); // State should be declared here
-
-//     const toggleMenu = () => {
-//         setIsOpen(!isOpen);
-//     };
-
-//     return (
-//         <main>
-//             <header className="flex justify-between bg-orange-900 py-4 relative z-10 ">
-//                 {/* Logo */}
-//                 <div>
-//                     <h2 className="italic text-3xl text-white ml-5 font-bold">Alishba Rehman</h2>
-//                 </div>
-//                 {/* Toggle Icon */}
-//                 <div className="md:hidden">
-//                     <button onClick={toggleMenu} className="text-white">
-//                         {isOpen ? <FaTimes className="w-6 h-6" /> : <FaBars className="w-6 h-6" />}
-//                     </button>
-//                 </div>
-//                 {/* Links */}
-//                 <nav className={`absolute md:static w-full bg-orange-900 transition-all duration-300 ease-in ${isOpen ? "top-16" : "-top-40"} md:top-0`}>
-//                     <ul className="flex flex-col md:flex-row md:gap-x-20 text-2xl text-white md:mr-16">
-//                         <li>
-//                             <Link href="/" className="hover:bg-orange-700 rounded brightness-95 p-2">Home</Link>
-//                         </li>
-//                         <li>
-//                             <Link href="/about" className="hover:bg-orange-700 rounded p-2">About</Link>
-//                         </li>
-//                         <li>
-//                             <Link href="/contact" className="hover:bg-orange-700 rounded p-2">Contact</Link>
-//                         </li>
-//                     </ul>
-//                 </nav>
-//             </header>
-//         </main>
-//     );
-// }
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"use client"; // Make this a client component
-import React, { useState } from "react";
-import Link from "next/link";
+'use client'; // Make this a client component
+import React, { useState } from 'react';
+import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importing toggle icons
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false); // State for toggling the menu
+  const [isOpen, setIsOpen] = useState(false); // State for toggling the menu
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen); // Toggle menu open/close
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle menu open/closenp
+  };
 
-    return (
-        <header className="bg-orange-900 text-white py-3 mr-0 fixed w-full z-10">
-            <div className="container mx-auto flex justify-between items-center">
-                {/* Logo */}
-                <h2 className="italic text-3xl font-bold mr-2 ">!AlishbaRehman!</h2>
-                
-                {/* Toggle Icon for mobile */}
-                <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-white p-2">
-                        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                    </button>
-                </div>
+  return (
+    <header className='bg-orange-900 text-white py-6 mr-0 fixed w-full z-10'>
+      <div className='container mx-auto flex justify-between items-center'>
+        {/* Logo */}
+        <h2 className='italic text-3xl font-bold mr-2 '>!AlishbaRehman!</h2>
 
-                {/* Navigation Links */}
-                <nav className={`absolute md:static w-full bg-orange-900 transition-all duration-300 ease-in ${isOpen ? "top-16" : "-top-40"} md:top-0`}>
-                    <ul className="flex flex-col md:flex-row md:gap-x-20 text-2xl text-white md:ml-auto md:mr-0 md:justify-end">
-                        <li>
-                            <Link href="/" className="hover:bg-orange-700 rounded brightness-95 p-2" onClick={() => setIsOpen(false)}>Home</Link>
-                        </li>
-                        <li>
-                            <Link href="/about" className="hover:bg-orange-700 rounded p-2" onClick={() => setIsOpen(false)}>About</Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" className="hover:bg-orange-700 rounded p-2" onClick={() => setIsOpen(false)}>Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
+        {/* Toggle Icon for mobile */}
+        <div className='md:hidden'>
+          <button onClick={toggleMenu} className='text-white p-2'>
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+
+        {/* Navigation Links */}
+        <nav
+          className={`absolute md:static w-full bg-orange-900 transition-all duration-300 ease-in ${
+            isOpen ? 'top-16' : '-top-40'
+          } md:top-0`}
+        >
+          <ul className='flex flex-col md:flex-row md:gap-x-20 text-2xl text-white md:ml-auto md:mr-0 md:justify-end'>
+            <li>
+              <Link
+                href='/'
+                className='hover:bg-orange-700 rounded brightness-95 p-2'
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/about'
+                className='hover:bg-orange-700 rounded p-2'
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/contact'
+                className='hover:bg-orange-700 rounded p-2'
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
 export default Navbar;
