@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import image0 from '../../public/imagess/image7.png' ;
 import image1 from '../../../app/public/imagess/image8.jpg' ; 
@@ -46,11 +47,11 @@ function Hero() {
         />
 
         {/* Text section on the right */}
-        <div className=' flex flex-col' >
+        <div className='flex flex-col' >
           <h1 className=' text-orange-900 text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-6' >
             HOME AGENCY
           </h1>
-          <p className=' text-center text-lg sm:text-xl md:text-2xl mb-5' >
+          <p className='text-center text-lg sm:text-xl md:text-2xl mb-5' >
             Digital Silk is a full-service agency comprised of leading web
             designers from around the globe. Whether building a website from
             scratch or redesigning your current digital presence our web design
@@ -59,23 +60,23 @@ function Hero() {
         </div>
       </div>
 
-      <h2 className=' text-center font-bold text-2xl sm:text-3xl md:text-4xl mb-5 mt-10 text-orange-900' >
+      <h2 className='text-center font-bold text-2xl sm:text-3xl md:text-4xl mb-5 mt-10 text-orange-900' >
         Watch Now
       </h2>
 
       {/* Flexbox layout for images */}
-      <div className=' flex flex-wrap justify-center gap-5 p-2 sm:p-4 w-full object-cover rounded border-8 border-orange-900' >
+      <div className='flex flex-wrap justify-center gap-5 p-2 sm:p-4 w-full object-cover rounded border-8 border-orange-900' >
         <Image
           src={image1}
           alt=' Image 1' 
-          className=' h-40 sm:h-48 md:h-80 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105' 
+          className='h-40 sm:h-48 md:h-80 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105' 
           width={500}
           height={500}
         />
         <Image
           src={image2}
           alt=' Image 2' 
-          className=' h-40 sm:h-48 md:h-80 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105' 
+          className='h-40 sm:h-48 md:h-80 w-full sm:w-[48%] md:w-[45%] object-cover rounded border-8 border-orange-900 ease-in-out hover:scale-105' 
           width={500}
           height={500}
         />

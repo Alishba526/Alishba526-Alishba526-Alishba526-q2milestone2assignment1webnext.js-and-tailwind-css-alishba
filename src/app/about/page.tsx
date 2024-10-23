@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import Image from 'next/image';
 import about1 from '../../app/public/imagess/image5.webp';
 import about3 from '../../app/public/imagess/image7.png';
