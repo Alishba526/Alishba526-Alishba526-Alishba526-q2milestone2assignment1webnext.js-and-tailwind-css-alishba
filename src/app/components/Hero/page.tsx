@@ -4,7 +4,7 @@ import image1 from '../../../app/public/imagess/image8.jpg' ;
 import image2 from '../../../app/public/imagess/image3.jpg' ;
 import image3 from '../../../app/public/imagess/image4.jpg' ;
 import image4 from '../../../app/public/imagess/image5.webp' ;
-import image5 from '../../../app/public/imagess/image6.jpeg' ;
+import image5 from '../../../app/public/imagess/imageh.jpg' ;
 import image6 from '../../../app/public/imagess/image2.jpg' ; 
 import backgroundImage from '../../public/imagess/image7.png' ; 
 
@@ -53,8 +53,8 @@ function Hero() {
           <p className=' text-center text-lg sm:text-xl md:text-2xl mb-5' >
             Digital Silk is a full-service agency comprised of leading web
             designers from around the globe. Whether building a website from
-            scratch or redesigning your current digital presence, our web design
-            services include:
+            scratch or redesigning your current digital presence our web design
+            services include.
           </p>
         </div>
       </div>
